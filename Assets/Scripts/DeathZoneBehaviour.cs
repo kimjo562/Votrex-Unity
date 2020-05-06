@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class DeathZoneBehaviour : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public GameManagerScript gameManager;
+    private void OnTriggerEnter(Collider col)
     {
-        GameManager.instance.loseLife();
+        // Lose a life and destroy the Ball
+        gameManager.loseLife();
+
+        GameObject tempGameObject = col.gameObject;
+        Destroy(tempGameObject);
     }
 }

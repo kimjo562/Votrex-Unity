@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8885360790203121714}
+  - component: {fileID: -4755116166462528807}
   m_Layer: 0
-  m_Name: Bricks
+  m_Name: BrickSet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,6 +55,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4755116166462528807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885360790203121713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 144e06e9fa2d01c4fb430bf40f9ad266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brickParticle: {fileID: 3146400936018216824, guid: 9d9e66ac24d321a458f54a72de30393f,
+    type: 3}
 --- !u!1001 &8126969038484529958
 PrefabInstance:
   m_ObjectHideFlags: 0
