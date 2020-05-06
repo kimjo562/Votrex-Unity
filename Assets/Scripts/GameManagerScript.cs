@@ -32,6 +32,7 @@ public class GameManagerScript : MonoBehaviour
         if (lives < 1)
         {
             gameOver.SetActive(true);
+            Time.timeScale = 0.5f;
             StartCoroutine(RestartGame());
         }
     }

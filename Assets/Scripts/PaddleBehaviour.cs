@@ -29,6 +29,7 @@ public class PaddleBehaviour : MonoBehaviour
         float xPos = cam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, transform.position.z - cam.transform.position.z)).x;
         // Set the transforms x to be our new x position
         paddlePos = new Vector3(xPos, transform.position.y, transform.position.z);
+        paddlePos = new Vector3(Mathf.Clamp(xPos, -8.5f, 8.5f), 0f, 0f);
         transform.position = paddlePos;
     }
 }
